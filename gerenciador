@@ -1,0 +1,15 @@
+public class Main {
+    public static void main(String[] args) {
+        Pessoa pessoa1 = new Pessoa();
+        Pessoa pessoa2 = new Pessoa();        
+        GerenciadorDePessoas gerenciador = new GerenciadorDePessoas(pessoa1, pessoa2);
+        gerenciador.cadastrarPessoa1(pessoa1);
+        gerenciador.cadastrarPessoa2(pessoa2);
+        gerenciador.exibirPessoa1();
+        gerenciador.exibirPessoa2();
+        gerenciador.atualizarPessoa1(pessoa1);
+        gerenciador.atualizarPessoa2(pessoa2);
+        gerenciador.exibirPessoa1();
+        gerenciador.exibirPessoa2();
+    }
+}
